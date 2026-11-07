@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "personalized-rank-residuals"
+version = "0.1.0"
+description = "Personalized PageRank with local pushes and exact rational residual verification"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "numpy>=2.2,<3", "matplotlib>=3.10"]
+
+[project.urls]
+Repository = "https://github.com/lcx0731/personalized-rank-residuals"
+
+[project.scripts]
+rank-residuals = "rank_residuals.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+filterwarnings = ["error"]

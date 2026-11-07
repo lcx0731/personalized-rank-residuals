@@ -1,0 +1,37 @@
+{
+  "status": "converged",
+  "scores": [
+    0.4180820472545192,
+    0.26652730464409524,
+    0.31539064382884596,
+    0.0
+  ],
+  "push_residual": [
+    0.0,
+    3.2044046612166833e-09,
+    1.0681348870722277e-09,
+    0.0
+  ],
+  "remaining_push_mass": 4.272539548288911e-09,
+  "pushes": 130,
+  "edge_updates": 174,
+  "dangling_updates": 0,
+  "tolerance": 1e-08,
+  "certificate": {
+    "exact_residual_l1": "46180357/72057594037927936",
+    "exact_error_bound_l1": "230901785/54043195528445952",
+    "error_bound_l1_upper_float": 4.272541302234127e-09,
+    "tolerance_met": true,
+    "score_sum": 0.9999999957274603,
+    "exact_score_sum": "18014398432514753/18014398509481984",
+    "top_nodes": [
+      0,
+      2
+    ],
+    "top_k_membership_proved": true,
+    "exact_boundary_gap": "440121832289043/9007199254740992",
+    "alpha": "17/20",
+    "dangling_policy": "personalization",
+    "arithmetic": "exact fractions from integer graph weights and exact binary-float candidate scores"
+  }
+}
